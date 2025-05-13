@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Explosion Demo</title>
+  <style>
+    /* Center content vertically and horizontally */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    /* Style for the image */
+    #image {
+      cursor: pointer;
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+    }
+  </style>
+  <script>
+    function explodeImage() {
+      var image = document.getElementById("image");
+      // Change source to the explosion image when clicked
+      image.src = "https://gifdb.com/images/high/fire-implosion-vs-explosion-dc5ylg407at077dj.gif";
+    }
+  </script>
+</head>
+<body>
+  <!-- Replace the src below with the actual URL or file path to your plush toy image -->
+  <img id="image" src="https://th.bing.com/th/id/R.a3df954e5456deebde4e20268dd75a86?rik=Ay5Q9xzvgNV%2fnw&riu=http%3a%2f%2fs.pacn.ws%2f640%2flr%2fnendoroid-plus-plush-series-50-kasane-teto-391979.4.jpg%3foc32av&ehk=eYYAtWn52uxOs9oFLdT6xJG8bfxJoQCf%2fTuSu18lSCc%3d&risl=&pid=ImgRaw&r=0" alt="Plush Toy" onclick="explodeImage()">
+</body>
+</html>
